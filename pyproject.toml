@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kelianbeye-tts_jd409"
+version = "0.1.0"
+description = "按段落统计语音合成工程师·分块策略对召回的影响相关的长度分布，标出过长、过短与重复表达的部分"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "kelianbeye" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://kelianbeye.github.io"
+Repository = "https://github.com/kelianbeye/tts_jd409"
+Issues = "https://github.com/kelianbeye/tts_jd409/issues"
+
+[project.scripts]
+tts_jd409 = "tts_jd409:main"
+
+[tool.setuptools]
+py-modules = ["tts_jd409"]
